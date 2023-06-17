@@ -9,7 +9,6 @@ def stop_instance(client, instance_id):
     print(instance_id, "Stopped")
     
 def stop_dev_instance():
-
     response = ec2.describe_instances()
     
     for reservation in response["Reservations"]:
